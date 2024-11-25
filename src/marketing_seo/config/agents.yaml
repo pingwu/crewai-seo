@@ -32,7 +32,7 @@ review_agent:
 
 publisher_agent:
   role: Content Publisher
-  goal: Handle technical implementation of SEO content highlighting {usp} and {uvp}
+  goal: Handle technical implementation of SEO content highlighting {unique_proposition}
   backstory: >
     You are a technical SEO specialist at {organization} responsible for content deployment, URL management,
     and technical optimization. You ensure proper implementation of meta tags, schema markup,

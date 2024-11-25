@@ -1,80 +1,86 @@
 strategic_planning_task:
   description: >
     As Director of Marketing, develop a comprehensive SEO strategy for {organization}. Consider our target audience
-    of {target_audience}, our {product}, and our goal of {business_goals}. Analyze
-    current market position, identify key opportunities, and outline strategic initiatives.
+    of {target_audience}, our {product}, and our goal of {business_goals}. Analyze current market position,
+    identify key opportunities across our {distribution} channels, and outline strategic initiatives for both
+    direct and retail presence.
   expected_output: >
     A detailed SEO strategy document including market analysis, target keywords, content priorities, technical
-    requirements, and KPIs aligned with {business_goals}.
+    requirements, and KPIs aligned with {business_goals}. Include specific strategies for supporting retail
+    partners and direct sales channels.
 
 workflow_coordination_task:
   description: >
     Coordinate the SEO workflow across all team members. Assign and track tasks, monitor progress, resolve
     bottlenecks, and ensure efficient execution of the SEO strategy. Focus on content optimization, technical
-    implementation, and quality assurance for {organization}.
+    implementation, and quality assurance for {organization}, including dealer/retailer support content.
   expected_output: >
     A comprehensive workflow plan with task assignments, timelines, dependencies, and progress tracking metrics.
-    Include coordination protocols between content, technical, and analytics teams.
+    Include coordination protocols between content, technical, and analytics teams, with specific focus on
+    retail partner support.
 
 content_optimization_task:
   description: >
     Optimize website content for target keywords while maintaining technical accuracy about {product} and
     {target_audience}. Integrate keywords naturally, optimize meta descriptions and title tags, and ensure
-    proper header structure. Focus on product pages, technical specifications, and educational content.
+    proper header structure. Focus on product pages, technical specifications, educational content, and
+    store locator/dealer pages highlighting our {distribution} network.
   expected_output: >
     SEO-optimized content with proper keyword integration, meta tags, and technical accuracy. Include
-    optimization reports for key landing pages and product descriptions highlighting {usp} and {uvp}.
+    optimization reports for key landing pages, product descriptions highlighting {unique_proposition},
+    and dealer location pages.
 
 content_review_task:
   description: >
     Review all optimized content for SEO compliance, technical accuracy, and quality standards. Verify
-    industry terminology, {product} specifications, and competitive claims. Ensure proper keyword
-    density and internal linking structure for {target_audience}.
+    industry terminology, {product} specifications, competitive claims, and {distribution} information. Ensure
+    proper keyword density and internal linking structure for {target_audience} and retail partners.
   expected_output: >
     Detailed review reports for each content piece, including SEO compliance checks, technical accuracy
-    verification, and quality metrics. Flag any issues requiring revision.
+    verification, and quality metrics. Flag any issues requiring revision, especially in dealer-related content.
 
 content_publishing_task:
   description: >
     Handle technical implementation of SEO content across the website. Manage URL structure, implement
     schema markup, optimize images, and ensure proper indexing. Coordinate with the development team
-    on technical requirements for {product} pages.
+    on technical requirements for {product} pages and store locator functionality for {distribution}.
   expected_output: >
     Implementation reports confirming proper deployment of SEO elements, including technical specifications,
-    schema markup, and indexing status for {organization}.
+    schema markup, and indexing status for {organization}, with emphasis on local SEO for retail partners.
 
 schedule_management_task:
   description: >
-    Manage the content calendar and publication schedule. Consider industry trends,
-    product launches, and competitive events. Coordinate content delivery across all channels
-    and ensure timely publication to reach {target_audience}.
+    Manage the content calendar and publication schedule. Consider industry trends, product launches,
+    competitive events, and seasonal retail patterns. Coordinate content delivery across all channels
+    and ensure timely publication to reach {target_audience} through our {distribution} network.
   expected_output: >
     A detailed content calendar with publication schedules, seasonal themes, and coordination plans.
-    Include deadline tracking and resource allocation aligned with {business_goals}.
+    Include deadline tracking and resource allocation aligned with {business_goals} and retail seasons.
 
 keyword_research_task:
   description: >
     Conduct comprehensive keyword research for {product}, {target_audience}, and related topics.
     Analyze search volume, competition, and user intent. Identify opportunities for featured
-    snippets and voice search optimization.
+    snippets, voice search optimization, and local SEO terms related to our {distribution} channels.
   expected_output: >
     Prioritized keyword lists with search volumes, competition metrics, and targeting recommendations.
-    Include long-tail variations and semantic keywords focused on {usp} and {uvp}.
+    Include long-tail variations, semantic keywords focused on {unique_proposition}, and location-based
+    terms for retail partners.
 
 performance_analysis_task:
   description: >
     Track and analyze SEO performance metrics. Monitor rankings, traffic, conversions, and progress
-    toward {business_goals}. Identify trends, opportunities, and areas needing improvement. Generate
-    insights for strategy refinement.
+    toward {business_goals}. Identify trends, opportunities, and areas needing improvement across
+    both direct and retail channels. Generate insights for strategy refinement.
   expected_output: >
     Comprehensive performance reports including ranking data, traffic analysis, conversion metrics,
-    and revenue impact. Include recommendations for optimization.
+    revenue impact, and dealer location performance. Include recommendations for optimization.
 
 quality_assurance_task:
   description: >
     Perform technical quality checks across the website. Verify mobile compatibility, page speed,
     schema markup, and technical SEO elements. Monitor site performance and identify technical
-    issues affecting SEO for {organization}.
+    issues affecting SEO for {organization}, including store locator and dealer pages.
   expected_output: >
     Technical audit reports covering site performance, mobile optimization, schema validation,
-    and SEO compliance. Include prioritized fix recommendations.
+    and SEO compliance. Include prioritized fix recommendations, especially for location-based features.

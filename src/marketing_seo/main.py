@@ -20,8 +20,7 @@ def run():
         "distribution": "Sales through specialized ski shops, outdoor sports stores, and ski resorts. Overnight delivery via FedEx/UPS, truck shipments via DHL.",
         "target_audience": "Professional competitive skiers in cross-county skiing, ski jump, and slalom in the United States, aged 18-35, from middle to upper-income backgrounds in northern and mountainous states.",
         "business_goals": "Increase annual sales revenue by 10% (from $14m to $15.4m) by end of Q4 2025 through expanded online marketing.",
-        "usp": "Bluetooth-enabled ski boots that connect to a smartphone to provide turn-by-turn GPS directions so skiers can explore new trails.",
-        "uvp": "Custom-made ski boots by Olympic gold winners for competitive skiers in cross-county, ski jump, and slalom."
+        "unique_proposition": "Custom-made ski boots by Olympic gold winners for competitive skiers in cross-county, ski jump, and slalom, featuring Bluetooth connectivity to provide turn-by-turn GPS directions for exploring new trails."
     }
 
     MarketingSEOCrew().crew().kickoff(inputs=inputs)

@@ -1,4 +1,4 @@
-from crewai_tools import ScrapeWebsiteTool, SerperDevTool
+from crewai_tools import ScrapeWebsiteTool, SerperDevTool, YoutubeVideoSearchTool 
 
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
@@ -15,7 +15,7 @@ class MarketingSEOCrew:
     def director_agent(self) -> Agent:
         return Agent(
             config=self.agents_config["director_agent"],
-            tools=[SerperDevTool(), ScrapeWebsiteTool()],
+            tools=[SerperDevTool(), ScrapeWebsiteTool(), YoutubeVideoSearchTool()],
             allow_delegation=True,
             verbose=True,
         )
@@ -33,7 +33,7 @@ class MarketingSEOCrew:
     def editor_agent(self) -> Agent:
         return Agent(
             config=self.agents_config["editor_agent"],
-            tools=[SerperDevTool(), ScrapeWebsiteTool()],
+            tools=[SerperDevTool(), ScrapeWebsiteTool(), YoutubeVideoSearchTool()],
             allow_delegation=False,
             verbose=True,
         )
@@ -42,7 +42,7 @@ class MarketingSEOCrew:
     def review_agent(self) -> Agent:
         return Agent(
             config=self.agents_config["review_agent"],
-            tools=[SerperDevTool(), ScrapeWebsiteTool()],
+            tools=[SerperDevTool(), ScrapeWebsiteTool(), YoutubeVideoSearchTool()],
             allow_delegation=False,
             verbose=True,
         )
@@ -69,7 +69,7 @@ class MarketingSEOCrew:
     def keyword_agent(self) -> Agent:
         return Agent(
             config=self.agents_config["keyword_agent"],
-            tools=[SerperDevTool(), ScrapeWebsiteTool()],
+            tools=[SerperDevTool(), ScrapeWebsiteTool(), YoutubeVideoSearchTool()],
             allow_delegation=False,
             verbose=True,
         )
@@ -78,7 +78,7 @@ class MarketingSEOCrew:
     def analytics_agent(self) -> Agent:
         return Agent(
             config=self.agents_config["analytics_agent"],
-            tools=[SerperDevTool(), ScrapeWebsiteTool()],
+            tools=[SerperDevTool(), ScrapeWebsiteTool(), YoutubeVideoSearchTool()],
             allow_delegation=False,
             verbose=True,
         )
@@ -87,7 +87,7 @@ class MarketingSEOCrew:
     def qa_agent(self) -> Agent:
         return Agent(
             config=self.agents_config["qa_agent"],
-            tools=[SerperDevTool(), ScrapeWebsiteTool()],
+            tools=[SerperDevTool(), ScrapeWebsiteTool(), YoutubeVideoSearchTool()],
             allow_delegation=False,
             verbose=True,
         )
@@ -97,6 +97,7 @@ class MarketingSEOCrew:
         return Task(
             config=self.tasks_config["strategic_planning_task"],
             agent=self.director_agent(),
+            required_tasks=[self.performance_analysis_task()]
         )
 
     @task 
@@ -104,6 +105,7 @@ class MarketingSEOCrew:
         return Task(
             config=self.tasks_config["workflow_coordination_task"],
             agent=self.manager_agent(),
+            required_tasks=[self.strategic_planning_task(), self.content_optimization_task(), self.content_review_task()]
         )
 
     @task
@@ -111,6 +113,7 @@ class MarketingSEOCrew:
         return Task(
             config=self.tasks_config["content_optimization_task"],
             agent=self.editor_agent(),
+            required_tasks=[self.keyword_research_task(), self.content_review_task()]
         )
 
     @task
@@ -118,6 +121,7 @@ class MarketingSEOCrew:
         return Task(
             config=self.tasks_config["content_review_task"], 
             agent=self.review_agent(),
+            required_tasks=[self.quality_assurance_task()]
         )
 
     @task
@@ -125,6 +129,7 @@ class MarketingSEOCrew:
         return Task(
             config=self.tasks_config["content_publishing_task"],
             agent=self.publisher_agent(),
+            required_tasks=[self.content_review_task(), self.schedule_management_task()]
         )
 
     @task
@@ -132,6 +137,7 @@ class MarketingSEOCrew:
         return Task(
             config=self.tasks_config["schedule_management_task"],
             agent=self.calendar_agent(),
+            required_tasks=[self.workflow_coordination_task()]
         )
 
     @task
@@ -139,6 +145,7 @@ class MarketingSEOCrew:
         return Task(
             config=self.tasks_config["keyword_research_task"],
             agent=self.keyword_agent(),
+            required_tasks=[self.performance_analysis_task()]
         )
 
     @task

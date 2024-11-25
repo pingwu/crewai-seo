@@ -1,0 +1,25 @@
+[project]
+name = "marketing_seo"
+version = "0.1.0"
+description = "marketing_seo using crewAI"
+authors = [
+    { name = "Ping Wu", email = "ping@ping-ai.com" },
+]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.76.2",
+    "langchain-core>=0.2.30",
+]
+
+[project.scripts]
+marketing_seo = "marketing_seo.main:run"
+run_crew = "marketing_seo.main:run"
+train = "marketing_seo.main:train"
+replay = "marketing_seo.main:replay"
+test = "marketing_seo.main:test"
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"

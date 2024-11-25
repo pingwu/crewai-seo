@@ -1,0 +1,80 @@
+strategic_planning_task:
+  description: >
+    As Director of Marketing, develop a comprehensive SEO strategy for {organization}. Consider our target audience
+    of {target_audience}, our {product}, and our goal of {business_goals}. Analyze
+    current market position, identify key opportunities, and outline strategic initiatives.
+  expected_output: >
+    A detailed SEO strategy document including market analysis, target keywords, content priorities, technical
+    requirements, and KPIs aligned with {business_goals}.
+
+workflow_coordination_task:
+  description: >
+    Coordinate the SEO workflow across all team members. Assign and track tasks, monitor progress, resolve
+    bottlenecks, and ensure efficient execution of the SEO strategy. Focus on content optimization, technical
+    implementation, and quality assurance for {organization}.
+  expected_output: >
+    A comprehensive workflow plan with task assignments, timelines, dependencies, and progress tracking metrics.
+    Include coordination protocols between content, technical, and analytics teams.
+
+content_optimization_task:
+  description: >
+    Optimize website content for target keywords while maintaining technical accuracy about {product} and
+    {target_audience}. Integrate keywords naturally, optimize meta descriptions and title tags, and ensure
+    proper header structure. Focus on product pages, technical specifications, and educational content.
+  expected_output: >
+    SEO-optimized content with proper keyword integration, meta tags, and technical accuracy. Include
+    optimization reports for key landing pages and product descriptions highlighting {usp} and {uvp}.
+
+content_review_task:
+  description: >
+    Review all optimized content for SEO compliance, technical accuracy, and quality standards. Verify
+    industry terminology, {product} specifications, and competitive claims. Ensure proper keyword
+    density and internal linking structure for {target_audience}.
+  expected_output: >
+    Detailed review reports for each content piece, including SEO compliance checks, technical accuracy
+    verification, and quality metrics. Flag any issues requiring revision.
+
+content_publishing_task:
+  description: >
+    Handle technical implementation of SEO content across the website. Manage URL structure, implement
+    schema markup, optimize images, and ensure proper indexing. Coordinate with the development team
+    on technical requirements for {product} pages.
+  expected_output: >
+    Implementation reports confirming proper deployment of SEO elements, including technical specifications,
+    schema markup, and indexing status for {organization}.
+
+schedule_management_task:
+  description: >
+    Manage the content calendar and publication schedule. Consider industry trends,
+    product launches, and competitive events. Coordinate content delivery across all channels
+    and ensure timely publication to reach {target_audience}.
+  expected_output: >
+    A detailed content calendar with publication schedules, seasonal themes, and coordination plans.
+    Include deadline tracking and resource allocation aligned with {business_goals}.
+
+keyword_research_task:
+  description: >
+    Conduct comprehensive keyword research for {product}, {target_audience}, and related topics.
+    Analyze search volume, competition, and user intent. Identify opportunities for featured
+    snippets and voice search optimization.
+  expected_output: >
+    Prioritized keyword lists with search volumes, competition metrics, and targeting recommendations.
+    Include long-tail variations and semantic keywords focused on {usp} and {uvp}.
+
+performance_analysis_task:
+  description: >
+    Track and analyze SEO performance metrics. Monitor rankings, traffic, conversions, and progress
+    toward {business_goals}. Identify trends, opportunities, and areas needing improvement. Generate
+    insights for strategy refinement.
+  expected_output: >
+    Comprehensive performance reports including ranking data, traffic analysis, conversion metrics,
+    and revenue impact. Include recommendations for optimization.
+
+quality_assurance_task:
+  description: >
+    Perform technical quality checks across the website. Verify mobile compatibility, page speed,
+    schema markup, and technical SEO elements. Monitor site performance and identify technical
+    issues affecting SEO for {organization}.
+  expected_output: >
+    Technical audit reports covering site performance, mobile optimization, schema validation,
+    and SEO compliance. Include prioritized fix recommendations.
